@@ -12,7 +12,7 @@ def get_setting(name: str, default: str) -> str:
         return os.getenv(name, default)
 
 
-API = get_setting("MEDINTEL_API_URL", "http://127.0.0.1:8000").rstrip("/")
+API = "https://medintell-1.onrender.com"
 st.set_page_config(page_title="Medintel", layout="wide")
 
 
